@@ -1,0 +1,115 @@
+
+
+				Programming Paradigms and Pragmatics
+					
+					Assignment2
+
+Files: 
+
+1. There are 4 jar files in the folder resources, namely: 
+	a. basic_tools.jar
+	b. update1.jar
+	c. update2.jar
+	d. update3.jar
+
+2. There is a "Tester.java" file in the zip file.
+
+Context:
+	1. This assignment is based on the use of OOP concepts such that a startup can sell tools
+	manufactured by it to the client. The client can use the tools int the form of libraries 	 to generate concrete classes to create family of related objects.
+
+	Also, it should be possible to shield the client's code from the future updates that the
+	startup releases which involves change in the components of libraries.
+
+
+	2. We have taken an example of a startup which makes tools for students to manage their
+	marks in different subjects.
+
+	3. The jar file "basic_tools.jar" contains the first set of tools that the startup 		released. It only has support for core subject, to know the description of core course,
+	to add your core marks in database and to know if you are pass or fail based on those
+	marks.
+
+	4. The jar file "update1.jar" contains the first update released by the startup. This
+	update supports additional subjects, which are Maths, Humanities, Science, and NSO.
+	You can add the individual marks in database, know your total marks, know total subjects
+	taken by you, know if you are pass or fail overall, and to get desctiption of individual
+	course.
+
+	5. The jar file "update2.jar" contains the second update released by the startup. This 
+	update supports additional functionalities, which are find average marks, find percentage,
+	find Max and Min marks.
+
+	6. The jar file "update3.jar" contains the third update released by the startup. This
+	update supports Grading functionalities which are display your overall grade based on
+	your marks, and all your marks.
+
+Concrete classes: 
+
+4 concrete classes have been implemented: 
+
+	1.CoreSub
+	2.AdditionalSubjects
+	3.AdditionalFunctions
+	4.AdditionalGrading
+
+
+--CoreSub will run using library basic_tools.
+--AdditionalSubjects needs library update1 to run. It won't function without it.
+--AdditionalFunctions needs library update2 to run. It won't function without it.
+--AdditionalGrading needs library update3 to run. It won't run without it.
+
+
+
+Demonstration:
+
+	1. Comment the whole AdditionalSubjects , AdditionalFunctions , AdditionalGrading classes
+	sections. Also comment the code snippets in Tester class which depend on these classes.
+	
+	Now you can either use library basic_tools, update1, update2, update3 to run your code.
+	The client will not need to change the code based on what update is being used by him.
+
+	2. Now suppose the client wants to add functionality for additional subjects. Uncomment the
+	AdditionalSubjects class and also uncomment the corresponding code snippet in Tester class.
+	Now you will have to use update1 or higher for the code to work.
+
+	3. Now suppose the client wants to add functionality for additional functions. Uncomment 
+	the AdditionalFunctions class and also uncomment the code snippent in Tester class based on
+	that class. Now you will need update2 or higher to run the code.
+
+	4. Now suppose the client wants to add funcitonality for grading. Uncomment the 		AdditionalGrading class and also uncomment the code snippet in Tester class based 		on that class. Now you will need update3 to run the code.
+
+
+How to run the code:
+
+	1. Copy and paste the desired jar file from resources folder into the same directory as 	that of the Tester.java.
+
+	2. Open the directory in the terminal.
+
+	3. Type the following commands:
+
+		a. javac -cp <jarfilename>.jar: Tester.java
+		b.java -cp <jarfilename>.jar: Tester
+
+	4. Follow the instructions prompted in the terminal.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
